@@ -1,0 +1,127 @@
+.experienceSection {
+  margin-bottom: 2rem;
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+  box-shadow: 0 0 30px rgba(64, 202, 202, 0.08);
+  backdrop-filter: blur(8px);
+}
+
+.sectionTitle {
+  text-align: center;
+  padding: 0.75rem 2.5rem;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  border: 2px solid rgba(0, 255, 255, 0.5);
+  border-radius: 14px;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 255, 255, 0.08),
+    rgba(0, 128, 255, 0.1)
+  );
+  box-shadow: 0 0 16px rgba(0, 255, 255, 0.5), 0 0 36px rgba(0, 128, 255, 0.4);
+  letter-spacing: 2px;
+  margin-bottom: 2.5rem;
+  animation: glowPulse 2s infinite alternate;
+}
+
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  padding: 2rem 0;
+  max-width: 800px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 90%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background: rgba(0, 187, 255, 0.3);
+}
+
+.timelineItem {
+  position: relative;
+  width: 80%; /* or whatever width you prefer */
+  left: 10%; /* push content to the right side */
+  padding: 1.5rem 2rem;
+  text-align: left;
+}
+/* .timelineItem:nth-child(odd) {
+  left: 0;
+  text-align: right;
+}
+
+.timelineItem:nth-child(even) {
+  left: 50%;
+  text-align: left;
+} */
+
+.timelineContent {
+  background: rgba(0, 255, 198, 0.05);
+  border: 2px solid #21b3e0;
+  border-radius: 8px;
+  padding: 1rem;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timelineContent:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px #12b4e6;
+}
+
+.timelineContent h3 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 1.3rem;
+}
+
+.timelineContent h4 {
+  margin: 0.5rem 0;
+  color: #08abe7;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.period {
+  display: block;
+  font-size: 0.9rem;
+  color: #999;
+  margin-bottom: 0.5rem;
+}
+
+.timelineContent p {
+  color: #ddd;
+  margin: 0;
+}
+
+.readMoreButton {
+  margin-top: 1rem;
+  background-color: transparent;
+  color: #08c8ea;
+  border: 1px solid #2a8bbc;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.readMoreButton:hover {
+  background-color: rgba(0, 255, 198, 0.1);
+  box-shadow: 0 0 8px #089cd6;
+}
+
+.detailsList {
+  margin-top: 1rem;
+  color: #ddd;
+  padding-left: 1rem;
+  list-style: disc;
+}
+.icon {
+  color: #687979;
+  font-size: 1.2rem;
+}

@@ -1,0 +1,55 @@
+.aboutSection {
+  margin-bottom: 2rem;
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+  box-shadow: 0 0 30px rgba(64, 202, 202, 0.08);
+  backdrop-filter: blur(8px);
+}
+
+.sectionTitle {
+  text-align: center;
+  padding: 0.75rem 2.5rem;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  border: 2px solid rgba(0, 255, 255, 0.5);
+  border-radius: 14px;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 255, 255, 0.08),
+    rgba(0, 128, 255, 0.1)
+  );
+  box-shadow: 0 0 16px rgba(0, 255, 255, 0.5), 0 0 36px rgba(0, 128, 255, 0.4);
+  letter-spacing: 2px;
+  margin-bottom: 2.5rem;
+  animation: glowPulse 2s infinite alternate;
+}
+
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 16px rgba(0, 255, 255, 0.5), 0 0 36px rgba(0, 128, 255, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 24px rgba(0, 255, 255, 0.7), 0 0 48px rgba(0, 128, 255, 0.5);
+  }
+}
+
+@keyframes underlineSlide {
+  0% {
+    width: 90px;
+  }
+  100% {
+    width: 120px;
+  }
+}
+
+.aboutText {
+  font-size: 1.25rem;
+  color: #e0e0e0;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto 50px;
+  text-align: center;
+  margin-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
