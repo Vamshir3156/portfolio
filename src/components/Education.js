@@ -14,7 +14,7 @@ export default function Education() {
     {
       degree: "Bachelor's in Computer Science",
       institute: "Sreenidhi Institute of Science and Technology",
-      period: "2018 - 2022",
+      period: "Jun 2018 - Jul 2022",
       description:
         "Strong foundation in algorithms, OOP concepts, and full-stack development.",
     },

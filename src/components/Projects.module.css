@@ -1,12 +1,10 @@
 .projectsSection {
   margin-bottom: 2rem;
-  padding-bottom: 3rem;
   border-radius: 18px;
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
   box-shadow: 0 0 30px rgba(64, 202, 202, 0.08);
   backdrop-filter: blur(8px);
 }
-
 .sectionTitle {
   text-align: center;
   padding: 0.75rem 2.5rem;
@@ -22,102 +20,141 @@
   );
   box-shadow: 0 0 16px rgba(0, 255, 255, 0.5), 0 0 36px rgba(0, 128, 255, 0.4);
   letter-spacing: 2px;
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
   animation: glowPulse 2s infinite alternate;
 }
 
-@keyframes glowPulse {
-  0% {
-    box-shadow: 0 0 16px rgba(0, 255, 255, 0.5), 0 0 36px rgba(0, 128, 255, 0.4);
-  }
-  100% {
-    box-shadow: 0 0 24px rgba(0, 255, 255, 0.7), 0 0 48px rgba(0, 128, 255, 0.5);
-  }
-}
-
-.projectList {
-  margin-top: 2rem;
+.grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  align-items: stretch;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
 }
 
-/* Flip container */
-.flipCard {
-  width: 100%;
-  height: 300px; /* ✅ Fixed height for flip alignment */
-  perspective: 1000px;
-  position: relative;
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
 
-/* Flip content wrapper */
-.flipCardInner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-  transition: transform 0.6s ease;
-}
-
-.flipCard:hover .flipCardInner {
-  transform: rotateY(180deg);
-}
-
-/* Front and Back face */
-.flipCardFront,
-.flipCardBack {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  backface-visibility: hidden;
-  box-sizing: border-box;
-}
-
-.flipCardBack {
-  transform: rotateY(180deg);
-  background: rgba(0, 0, 0, 0.6);
-  border: 2px solid #00ffff;
-}
-
-/* Card content */
 .projectCard {
-  padding: 1rem;
-  background: rgba(255, 255, 255, 0.08);
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-  border: 2px solid transparent;
+  margin-top: 2.5rem;
+  background: rgba(15, 25, 35, 0.7);
+  border: 1.5px solid rgba(0, 255, 255, 0.3);
+  border-radius: 14px;
+  padding: 1.8rem;
+  color: #e9f8ff;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.05);
 }
 
-.projectCard h3 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  color: #7bc3d0;
+.projectCard:hover {
+  transform: translateY(-6px);
+  border-color: rgba(0, 255, 255, 0.7);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
 }
 
-.projectCard p {
+.projectTitle {
+  font-size: 1.6rem;
+  color: #60f7ff;
+  margin-bottom: 0.5rem;
+}
+
+.projectDesc {
   font-size: 1rem;
+  color: #cfeff5;
+  line-height: 1.6;
   margin-bottom: 1rem;
-  color: #ffffff;
 }
 
-.projectLink {
-  text-decoration: none;
-  color: #eeeeee;
+.divider {
+  border-bottom: 1px solid rgba(0, 255, 255, 0.3);
+  margin: 0.8rem 0;
+}
+
+.infoBlock h4 {
+  color: #84f2ff;
+  margin-bottom: 0.4rem;
+  font-size: 1.05rem;
   font-weight: 600;
-  transition: color 0.3s ease;
 }
 
-.projectLink:hover {
-  color: #3787ce;
+.infoBlock ul {
+  list-style: disc;
+  padding-left: 1.2rem;
+  margin: 0 0 1rem 0;
+  color: #e6faff;
+  font-size: 0.95rem;
 }
 
-.projectDetails {
-  white-space: pre-line;
-  font-size: 1rem;
-  color: white;
-  flex-grow: 1;
+.toolList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 1.2rem;
+}
+
+.toolList span {
+  background: rgba(0, 255, 255, 0.1);
+  border: 1px solid rgba(0, 255, 255, 0.4);
+  border-radius: 999px;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.85rem;
+  color: #b7ffff;
+  transition: background 0.3s ease;
+}
+
+.toolList span:hover {
+  background: rgba(0, 255, 255, 0.3);
+  color: #000;
+}
+
+.btnRow {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.demoBtn,
+.sourceBtn {
+  padding: 0.55rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.demoBtn {
+  background: green;
+  border: 1.5px solid #00ff04;
+  color: #e6ffff;
+}
+
+.demoBtn:hover {
+  color: #00ff66;
+  box-shadow: 0 0 20px rgba(51, 255, 0, 0.4);
+}
+
+.sourceBtn {
+  background: rgb(1, 60, 105);
+  border: 1.5px solid #009dff;
+  color: #e6ffff;
+}
+
+.sourceBtn:hover {
+  color: #02cdfa;
+  box-shadow: 0 0 20px rgba(0, 153, 255, 0.4);
+}
+.icon {
+  font-size: 1.1rem;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+.toolList span:hover .icon {
+  color: #000;
+  transform: scale(1.15);
 }

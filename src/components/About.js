@@ -8,7 +8,7 @@ export default function About() {
         About Me
       </h2>
       <p className={styles.aboutText}>
-        Hi, I'm Vamshi R — a dedicated Full Stack Developer with 3+ years of
+        Hi, I'm Vamshi! — a dedicated Full Stack Developer with 3+ years of
         experience crafting scalable, high-performance web applications. I
         specialize in building intuitive frontends with React and robust
         backends using Node.js and Java, often within microservices

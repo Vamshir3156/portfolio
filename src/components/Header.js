@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Header.module.css";
+import { FaGithub, FaLinkedin, FaEnvelope, FaDownload } from "react-icons/fa";
 
 export default function Header() {
   return (
@@ -41,12 +42,36 @@ export default function Header() {
               Full Stack Developer | Java, Spring Boot & React.js Specialist
             </p>
 
+            <div className={styles.socialIcons}>
+              <a
+                href="https://github.com/Vamshir3156"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+              >
+                <FaGithub />
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/vamshi-r-623418208/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <FaLinkedin />
+              </a>
+
+              <a href="mailto:rvamshi3156@gmail.com" aria-label="Email">
+                <FaEnvelope />
+              </a>
+            </div>
+
             <a
               href="/Vamshi_Resume.pdf"
               className={styles.resumeButton}
               download
             >
-              Download Resume
+              <FaDownload className={styles.icon} /> Download Resume
             </a>
           </div>
         </div>

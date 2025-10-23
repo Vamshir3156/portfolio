@@ -37,7 +37,7 @@ body {
   font-size: 0.95rem;
   font-weight: 800;
   padding: 0.35rem 0.75rem;
-  border-radius: 6px;
+  border-radius: 20px;
   transition: all 0.3s ease;
 }
 
@@ -138,15 +138,38 @@ body {
 .resumeButton {
   margin-top: 15px;
   padding: 10px 24px;
-  background-color: #00bcd4;
+  background-color: #215a5e;
   color: white;
   font-weight: bold;
   border: none;
-  border-radius: 12px;
+  border-radius: 50px;
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
 
 .resumeButton:hover {
-  background-color: #0097a7;
+  background-color: #049ac0;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1.8rem;
+  font-size: 1.6rem;
+}
+
+.socialIcons a {
+  color: #ffffff;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.socialIcons a:hover {
+  transform: translateY(-4px) scale(1.1);
+  color: #00bcd4;
+}
+
+.icon {
+  margin-right: 8px;
+  vertical-align: middle;
 }

@@ -45,20 +45,11 @@
 
 .timelineItem {
   position: relative;
-  width: 80%; /* or whatever width you prefer */
-  left: 10%; /* push content to the right side */
+  width: 80%;
+  left: 10%;
   padding: 1.5rem 2rem;
   text-align: left;
 }
-/* .timelineItem:nth-child(odd) {
-  left: 0;
-  text-align: right;
-}
-
-.timelineItem:nth-child(even) {
-  left: 50%;
-  text-align: left;
-} */
 
 .timelineContent {
   background: rgba(0, 255, 198, 0.05);
@@ -105,7 +96,7 @@
   color: #08c8ea;
   border: 1px solid #2a8bbc;
   padding: 0.4rem 0.8rem;
-  border-radius: 6px;
+  border-radius: 20px;
   cursor: pointer;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
