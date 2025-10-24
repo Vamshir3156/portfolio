@@ -37,7 +37,9 @@ export default function Header() {
           </div>
 
           <div className={styles.leftContent}>
-            <h1 className={styles.title}>Vamshi R</h1>
+            <h1 className={styles.title}>
+              Vamshi <span className={styles.blueR}>R</span>
+            </h1>
             <p className={styles.subtitle}>
               Full Stack Developer | Java, Spring Boot & React.js Specialist
             </p>

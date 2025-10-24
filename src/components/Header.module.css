@@ -44,8 +44,6 @@ body {
 .navLink:hover {
   background-color: rgba(0, 255, 198, 0.08);
   color: #01b6f3;
-  border: 1px solid #0ca8e5;
-  box-shadow: 0 0 10px rgba(0, 255, 198, 0.15);
 }
 
 .heroSection {
@@ -172,4 +170,10 @@ body {
 .icon {
   margin-right: 8px;
   vertical-align: middle;
+}
+.blueR {
+  color: #00bfff;
+  font-size: 1.1em;
+  font-weight: 700;
+  letter-spacing: 1px;
 }

@@ -38,7 +38,9 @@
 
 .projectCard {
   margin-top: 2.5rem;
-  background: rgba(15, 25, 35, 0.7);
+  margin-bottom: 1rem;
+
+  background: rgba(20, 20, 20, 0.05);
   border: 1.5px solid rgba(0, 255, 255, 0.3);
   border-radius: 14px;
   padding: 1.8rem;
@@ -61,7 +63,7 @@
 
 .projectDesc {
   font-size: 1rem;
-  color: #cfeff5;
+  color: #ffffff;
   line-height: 1.6;
   margin-bottom: 1rem;
 }
@@ -82,8 +84,8 @@
   list-style: disc;
   padding-left: 1.2rem;
   margin: 0 0 1rem 0;
-  color: #e6faff;
-  font-size: 0.95rem;
+  color: #ffffff;
+  font-size: 1rem;
 }
 
 .toolList {
@@ -94,12 +96,11 @@
 }
 
 .toolList span {
-  background: rgba(0, 255, 255, 0.1);
   border: 1px solid rgba(0, 255, 255, 0.4);
   border-radius: 999px;
   padding: 0.3rem 0.7rem;
   font-size: 0.85rem;
-  color: #b7ffff;
+  color: #ffffff;
   transition: background 0.3s ease;
 }
 
@@ -157,4 +158,60 @@
 .toolList span:hover .icon {
   color: #000;
   transform: scale(1.15);
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 0.6rem 0 1.1rem 0;
+}
+
+@media (max-width: 900px) {
+  .featuresGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.featureCard {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: rgba(12, 20, 28, 0.45);
+  border: 1px solid rgba(0, 255, 255, 0.25);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.06);
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.featureCard:hover {
+  transform: translateY(-2px);
+  border-color: rgba(0, 255, 255, 0.6);
+  box-shadow: 0 0 16px rgba(0, 255, 255, 0.22);
+}
+
+.featureIcon {
+  font-size: 1.25rem;
+  color: #7ee7ff;
+  flex-shrink: 0;
+  /* filter: drop-shadow(0 0 6px rgba(0, 255, 255, 0.35)); */
+}
+
+.featureTitle {
+  font-size: 0.95rem;
+  color: #e6fbff;
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+.featureSub {
+  font-size: 0.8rem;
+  color: #bfefff;
+  opacity: 0.8;
+  line-height: 1.2;
+}
+
+.infoBlock h4 + .featuresGrid {
+  margin-top: 0.5rem;
 }
