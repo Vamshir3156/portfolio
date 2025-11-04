@@ -23,9 +23,14 @@ import {
   FaCreditCard,
 } from "react-icons/fa";
 import { MdCategory, MdDashboard } from "react-icons/md";
-import { RiLockPasswordFill } from "react-icons/ri";
+
 import {
   SiMongodb,
+  SiTypescript,
+  SiPostgresql,
+  SiSocketdotio,
+  SiJavascript,
+  SiPrisma,
   SiPostman,
   SiNodemon,
   SiRedux,
@@ -54,6 +59,8 @@ const iconMap = {
   "Tailwind CSS": <SiTailwindcss className={styles.icon} color="#38BDF8" />,
   Node: <FaNodeJs className={styles.icon} color="#68A063" />,
   "Node.js": <FaNodeJs className={styles.icon} color="#68A063" />,
+  TypeScript: <SiTypescript className={styles.icon} color="#3178C6" />,
+  PostgreSQL: <SiPostgresql className={styles.icon} color="#336791" />,
   Express: <SiExpress className={styles.icon} color="#808080" />,
   MongoDB: <SiMongodb className={styles.icon} color="#47A248" />,
   Mongoose: <SiMongoose className={styles.icon} color="#880000" />,
@@ -62,6 +69,7 @@ const iconMap = {
   JWT: <SiJsonwebtokens className={styles.icon} color="#776e6eff" />,
   Axios: <SiAxios className={styles.icon} color="#671DDf" />,
   Postman: <SiPostman className={styles.icon} color="#FF6C37" />,
+  JavaScript: <SiJavascript className={styles.icon} color="#F7DF1E" />,
   Nodemon: <SiNodemon className={styles.icon} color="#76D04B" />,
   Vercel: <SiVercel className={styles.icon} color="#948d8dff" />,
   Render: <SiRender className={styles.icon} color="#46E3B7" />,
@@ -80,6 +88,8 @@ const iconMap = {
   "OpenAI API": <FaBrain className={styles.icon} color="#00A67E" />,
   NLP: <FaBrain className={styles.icon} color="#FF7F50" />,
   "CSS Modules": <FaCss3Alt className={styles.icon} color="#2965F1" />,
+  Socketio: <SiSocketdotio className={styles.icon} color="#010101" />,
+  Prisma: <SiPrisma className={styles.icon} color="#0C344B" />,
   Vite: <SiVite className={styles.icon} color="#646CFF" />,
   Git: <FaGithub className={styles.icon} color="#F05032" />,
   Server: <FaServer className={styles.icon} color="#808080" />,
@@ -100,6 +110,7 @@ const projects = [
     ],
     tools: [
       "React",
+      "JavaScript",
       "Redux Toolkit",
       "Tailwind CSS",
       "Node.js",
@@ -113,28 +124,61 @@ const projects = [
     source: "https://github.com/Vamshir3156/ecommerce-ShopX.git",
   },
   {
-    title: "Taskify API",
+    title: "DevSync – Real-time Project Manager",
     description:
-      "A secure REST API for managing tasks, featuring JWT-based authentication and a robust MongoDB backend.",
+      "Collaborative project boards with role-based access (Owner/Admin/Member/Viewer), real-time chat, and drag-drop Kanban.",
     features: [
-      "Secure RESTful API : Structured endpoints for task and user management.",
-      "JWT Authentication & Authorization : Token-based login with protected routes.",
-      "MongoDB Data Modeling : Scalable schemas with Mongoose and validation.",
-      "Comprehensive CRUD Operations : Create, update, delete, fetch with safe responses.",
-      "Postman-Verified Endpoints : Tests and docs for reliability and collaboration.",
+      "Auth & Roles : JWT auth with Owner/Admin/Member/Viewer permissions",
+      "Kanban Board : Drag & drop across Todo · In-Progress · Done",
+      "Real-time Chat : Socket.io room per project with live updates",
+      "Members Console : Invite, change roles, remove (adminish only)",
+      "Wake Gate : Smart overlay that pings /health and auto-retries",
+      "Prisma + Postgres : Typed schema, migrations, cascades",
+      "Deploy Ready : Vercel (client) + Render (API) + managed Postgres",
     ],
     tools: [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
       "Node.js",
       "Express",
-      "MongoDB",
-      "Mongoose",
+      "Socket.io",
+      "Prisma",
+      "PostgreSQL",
       "JWT",
-      "Postman",
-      "Nodemon",
+      "Axios",
+      "Docker",
+      "Vercel",
+      "Render",
     ],
-    live: "https://taskify-api-zeta.vercel.app",
-    source: "https://github.com/Vamshir3156/taskify-API.git",
+    live: "https://dev-sync-mu.vercel.app",
+    source: "https://github.com/Vamshir3156/DevSync.git",
   },
+
+  // {
+  //   title: "Taskify API",
+  //   description:
+  //     "A secure REST API for managing tasks, featuring JWT-based authentication and a robust MongoDB backend.",
+  //   features: [
+  //     "Secure RESTful API : Structured endpoints for task and user management.",
+  //     "JWT Authentication & Authorization : Token-based login with protected routes.",
+  //     "MongoDB Data Modeling : Scalable schemas with Mongoose and validation.",
+  //     "Comprehensive CRUD Operations : Create, update, delete, fetch with safe responses.",
+  //     "Postman-Verified Endpoints : Tests and docs for reliability and collaboration.",
+  //   ],
+  //   tools: [
+  //     "Node.js",
+  //     "Express",
+  //     "MongoDB",
+  //     "Mongoose",
+  //     "JWT",
+  //     "Postman",
+  //     "Nodemon",
+  //   ],
+  //   live: "https://taskify-api-zeta.vercel.app",
+  //   source: "https://github.com/Vamshir3156/taskify-API.git",
+  // },
   {
     title: "AI in Commodities Trading",
     description:
@@ -212,38 +256,70 @@ const featuresByProject = {
       sub: "Lightweight & fast",
     },
   ],
-  "Taskify API": [
-    {
-      icon: <FaLock className={styles.featureIcon} />,
-      title: "Secure REST API",
-      sub: "Versioned, consistent endpoints",
-    },
-    {
-      icon: <SiJsonwebtokens className={styles.featureIcon} />,
-      title: "JWT Auth",
-      sub: "Stateless tokens & guards",
-    },
-    {
-      icon: <SiMongoose className={styles.featureIcon} />,
-      title: "Data Modeling",
-      sub: "MongoDB schemas & validation",
-    },
+  "DevSync – Real-time Project Manager": [
     {
       icon: <FaTasks className={styles.featureIcon} />,
-      title: "Full CRUD",
-      sub: "Tasks · Users · Status",
+      title: "Kanban Task Board",
+      sub: "Drag & drop across swimlanes",
     },
     {
-      icon: <SiPostman className={styles.featureIcon} />,
-      title: "Postman Tests",
-      sub: "Docs · Collections · CI-ready",
+      icon: <FaUserShield className={styles.featureIcon} />,
+      title: "RBAC",
+      sub: "Owner · Admin · Member · Viewer",
     },
     {
-      icon: <FaCloudUploadAlt className={styles.featureIcon} />,
-      title: "Deploy-Ready",
-      sub: "Logs · Health · Nodemon",
+      icon: <FaServer className={styles.featureIcon} />,
+      title: "Live Chat",
+      sub: "Socket.io rooms per project",
+    },
+    {
+      icon: <FaDatabase className={styles.featureIcon} />,
+      title: "Prisma + Postgres",
+      sub: "Migrations & cascades",
+    },
+    {
+      icon: <FaLock className={styles.featureIcon} />,
+      title: "JWT Auth",
+      sub: "Guards & interceptors",
+    },
+    {
+      icon: <MdDashboard className={styles.featureIcon} />,
+      title: "Wake Gate",
+      sub: "Health pings & retries",
     },
   ],
+  // "Taskify API": [
+  //   {
+  //     icon: <FaLock className={styles.featureIcon} />,
+  //     title: "Secure REST API",
+  //     sub: "Versioned, consistent endpoints",
+  //   },
+  //   {
+  //     icon: <SiJsonwebtokens className={styles.featureIcon} />,
+  //     title: "JWT Auth",
+  //     sub: "Stateless tokens & guards",
+  //   },
+  //   {
+  //     icon: <SiMongoose className={styles.featureIcon} />,
+  //     title: "Data Modeling",
+  //     sub: "MongoDB schemas & validation",
+  //   },
+  //   {
+  //     icon: <FaTasks className={styles.featureIcon} />,
+  //     title: "Full CRUD",
+  //     sub: "Tasks · Users · Status",
+  //   },
+  //   {
+  //     icon: <SiPostman className={styles.featureIcon} />,
+  //     title: "Postman Tests",
+  //     sub: "Docs · Collections · CI-ready",
+  //   },
+  //   {
+  //     icon: <FaCloudUploadAlt className={styles.featureIcon} />,
+  //     title: "Deploy-Ready",
+  //     sub: "Logs · Health · Nodemon",
+  //   },
+  // ],
   "AI in Commodities Trading": [
     {
       icon: <FaChartLine className={styles.featureIcon} />,
