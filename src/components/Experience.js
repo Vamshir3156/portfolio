@@ -32,7 +32,7 @@ export default function Experience() {
       ],
     },
     {
-      title: "Java/J2EE Developer",
+      title: "Software Developer",
       company: "Cigniti",
       period: "May 2022 - Dec 2022",
       summary:

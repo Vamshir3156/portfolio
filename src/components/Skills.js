@@ -25,6 +25,7 @@ import {
   SiMongodb,
   SiMysql,
   SiPostman,
+  SiAwsamplify,
   SiKubernetes,
 } from "react-icons/si";
 
@@ -47,6 +48,7 @@ const iconMap = {
   PostgreSQL: <SiPostgresql color="#336791" />,
   MongoDB: <SiMongodb color="#47A248" />,
   DynamoDB: <FaDatabase color="#4051B5" />,
+  AWS: <SiAwsamplify color="#FF9900" />,
   MySQL: <SiMysql color="#00758F" />,
   "Git & GitHub": <FaGitAlt color="#F1502F" />,
   Postman: <SiPostman color="#FF6C37" />,
@@ -88,8 +90,8 @@ export default function Skills() {
         "MongoDB",
         "DynamoDB",
         "MySQL",
+        "AWS",
         "Git & GitHub",
-        "Postman",
         "Kubernetes",
         "Docker",
       ],
