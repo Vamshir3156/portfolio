@@ -90,7 +90,7 @@ export default function Skills() {
         "MongoDB",
         "DynamoDB",
         "MySQL",
-        "AWS",
+        "Postman",
         "Git & GitHub",
         "Kubernetes",
         "Docker",
