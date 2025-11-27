@@ -68,7 +68,7 @@ export default function Contact() {
 
           <div className={styles.socialLinks}>
             <a
-              href="https://www.linkedin.com/in/vamshi-r-623418208/"
+              href="https://www.linkedin.com/in/vamshiratna/"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.socialButton}

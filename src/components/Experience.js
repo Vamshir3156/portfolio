@@ -10,11 +10,11 @@ export default function Experience() {
       summary:
         "Designed Secure, Scalable Fraud Detection Platforms Using Modern Full Stack and Cloud Technologies.",
       details: [
-        "Developed a financial fraud detection platform using Java, Spring Boot, and microservices to analyze large-scale transactional data.",
-        "Built responsive dashboards using Angular 15+, React.js, and Vue.js with Redux and NgRx for complex state management.",
-        "Deployed services on AWS using Kubernetes, Docker, Terraform, and managed serverless execution using AWS Lambda.",
-        "Integrated security using OAuth2, JWT, and RBAC with Spring Security to protect sensitive data.",
-        "Monitored application health using Prometheus, Grafana, Dynatrace, and Splunk to optimize performance and system reliability.",
+        "Built full-stack fraud detection features using Java, Spring Boot, Angular 15+, React, Node.js, delivering scalable microservices while developing responsive UI dashboards for real-time analytics.",
+        "Developed rich frontend components with Angular 15+, React, NgRx/Redux, improving client-side rendering performance by 35% and enabling seamless data visualization.",
+        "Designed and integrated REST/GraphQL APIs to support full-stack features, improving frontend–backend communication throughput by 30%.",
+        "Deployed and maintained cloud infrastructure on AWS EKS, using Kubernetes, Docker, Terraform to support both backend services and UI builds.",
+        "Implemented end-to-end security across the stack using Spring Security, OAuth2, JWT, ensuring compliant, secure data flow between frontend and backend.",
       ],
     },
     {
@@ -24,39 +24,24 @@ export default function Experience() {
       summary:
         "Delivered End-to-End Application Modernization with CI/CD Automation, DocuSign Integration, and Cloud Migration.",
       details: [
-        "Migrated legacy applications to a microservices architecture using Spring Boot, Kafka, and RESTful APIs for modular scalability.",
-        "Rebuilt frontend in Angular 11+ and React.js with dynamic routing, lazy loading, and reusable components.",
-        "Integrated DocuSign API for secure digital signatures and enhanced compliance with electronic document handling.",
-        "Automated test and build pipelines with Cypress, Jest, Jenkins, and GitHub Actions for faster feedback and deployment cycles.",
-        "Deployed solutions to AWS (EC2, S3, Lambda) with Kubernetes for scalable and cost-efficient cloud infrastructure.",
+        "Migrated a legacy platform into Spring Boot + Node.js microservices, enabling modular full-stack architecture and reducing system latency by 40%.",
+        "Developed full-stack features using Angular 11+, React, TypeScript, and built reusable UI components with lazy loading to improve page load speed by 35%.",
+        "Built real-time fraud alerting interfaces and backend services using Kafka, Elasticsearch, Node.js, improving alert accuracy and responsiveness.",
+        "Automated the full CI/CD lifecycle for both frontend and backend using Jenkins, GitHub Actions, Cypress, Jest, achieving 99% pipeline stability.",
       ],
     },
-    {
-      title: "Software Developer",
-      company: "Cigniti",
-      period: "May 2022 - Dec 2022",
-      summary:
-        "Delivered Full Stack Web Solutions with Secure APIs, Real-Time Integration, and Responsive UIs.",
-      details: [
-        "Designed backend APIs using Spring Boot and JAX-RS to serve high-traffic government web applications.",
-        "Created dynamic user interfaces using React, SCSS, and Bootstrap to improve accessibility and usability.",
-        "Ensured secure API access through OAuth2 and JWT while applying role-based access for sensitive user actions.",
-        "ntegrated Kafka and RabbitMQ for real-time event streaming and distributed processing.",
-        "Tuned queries and indexing strategies using MongoDB, Elasticsearch, and PostgreSQL to improve response times.",
-      ],
-    },
+
     {
       title: "Software Developer",
       company: "HSBC",
-      period: "Feb 2021 - May 2021",
+      period: "Feb 2021 - Dec 2022",
       summary:
         "Developed Enterprise Applications with OAuth2 Security, Event Streaming, and High-Performance Data Queries.",
       details: [
-        "Engineered enterprise payment modules using Java, Struts, and Hibernate, conforming to PCI DSS and financial compliance standards.",
-        "Secured payment flows with AES encryption and HSM integration for sensitive transaction data.",
-        "Developed RESTful APIs for customer onboarding, transactions, and account services with 40% performance gains.",
-        "Implemented Redis caching for performance optimization and faster data retrieval under load.",
-        "Orchestrated deployments via Docker and Kubernetes on AWS, achieving fault tolerance and zero-downtime updates.",
+        "Developed frontend pages in HTML/CSS/JavaScript and integrated them with backend APIs built in Spring Boot, Struts, Hibernate, improving end-user workflows.",
+        "Built and secured backend services with Spring Security and integrated AES + HSM encryption for secure payment processing.",
+        "Improved REST API response times by 40% through backend optimization and efficient UI–backend data flow.",
+        "Deployed full-stack containers on AWS + Kubernetes, enabling reliable, zero-downtime application updates.",
       ],
     },
   ];
