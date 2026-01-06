@@ -63,7 +63,7 @@ export default function Contact() {
           </div>
           <div className={styles.contactItem}>
             <FaMapMarkerAlt className={styles.icon} />
-            <span>Dallas, TX, USA</span>
+            <span>Rochester, NY, USA</span>
           </div>
 
           <div className={styles.socialLinks}>
