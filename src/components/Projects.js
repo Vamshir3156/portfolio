@@ -199,6 +199,7 @@ const projects = [
       "NLP",
       "Streamlit",
     ],
+    source: "https://github.com/Vamshir3156/ai-commodities-trading",
   },
   {
     title: "Automated COBOL Modernization",
@@ -220,6 +221,7 @@ const projects = [
       "Git",
       "VS Code",
     ],
+    source: "https://github.com/Vamshir3156/cobol_modernizer",
   },
 ];
 
