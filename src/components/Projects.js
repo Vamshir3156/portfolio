@@ -18,7 +18,6 @@ import {
   FaChartLine,
   FaExchangeAlt,
   FaCogs,
-  FaCloudUploadAlt,
   FaProjectDiagram,
   FaCreditCard,
 } from "react-icons/fa";
