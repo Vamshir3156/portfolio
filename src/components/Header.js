@@ -38,7 +38,7 @@ export default function Header() {
 
           <div className={styles.leftContent}>
             <h1 className={styles.title}>
-              Vamshi <span className={styles.blueR}>R</span>
+              Vamshi <span className={styles.blueR}>Ratna</span>
             </h1>
             <p className={styles.subtitle}>
               Full Stack Developer | Java, Spring Boot & React.js Specialist
@@ -55,7 +55,7 @@ export default function Header() {
               </a>
 
               <a
-                href="https://www.linkedin.com/in/vamshi-r-623418208/"
+                href="https://www.linkedin.com/in/vamshikratna/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
@@ -63,13 +63,13 @@ export default function Header() {
                 <FaLinkedin />
               </a>
 
-              <a href="mailto:rvamshi3156@gmail.com" aria-label="Email">
+              <a href="mailto:vamshiratna5@gmail.com" aria-label="Email">
                 <FaEnvelope />
               </a>
             </div>
 
             <a
-              href="/Vamshi_Resume.pdf"
+              href="/Vamshi_Ratna_Resume.pdf"
               className={styles.resumeButton}
               download
             >

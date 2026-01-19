@@ -50,7 +50,7 @@ export default function Experience() {
 
   const toggleReadMore = (index) => {
     setExpandedIndexes((prev) =>
-      prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index]
+      prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index],
     );
   };
 

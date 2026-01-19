@@ -30,7 +30,7 @@ export default function Contact() {
         ENV.SERVICE_ID,
         ENV.TEMPLATE_ID,
         formRef.current,
-        ENV.PUBLIC_KEY
+        ENV.PUBLIC_KEY,
       );
       alert("✅ Message sent! I’ll get back to you soon.");
       formRef.current.reset();
@@ -55,11 +55,11 @@ export default function Contact() {
         <div className={styles.contactInfo}>
           <div className={styles.contactItem}>
             <FaEnvelope className={styles.icon} />
-            <a href="mailto:rvamshi3156@gmail.com">rvamshi3156@gmail.com</a>
+            <a href="mailto:vamshiratna5@gmail.com">vamshiratna5@gmail.com</a>
           </div>
           <div className={styles.contactItem}>
             <FaPhoneAlt className={styles.icon} />
-            <a href="tel:+14697089711">+1 (469)-798-9711</a>
+            <a href="tel:+15854148382">+1 (585)-414-8382</a>
           </div>
           <div className={styles.contactItem}>
             <FaMapMarkerAlt className={styles.icon} />
@@ -68,7 +68,7 @@ export default function Contact() {
 
           <div className={styles.socialLinks}>
             <a
-              href="https://www.linkedin.com/in/vamshiratna/"
+              href="https://www.linkedin.com/in/vamshikratna/"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.socialButton}
